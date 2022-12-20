@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Courgette&family=Kalam&family=Noto+Sans+TC&family=Pacifico&display=swap');
+*{
+	font-family: 'Baloo 2', 'Noto Sans TC';
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+
+}
+nav{
+	margin-top: 0;
+	position: fixed;
+	background: #4E342E;
+	height: 60px;
+	width: 100% ;
+}
+#logo a{
+	 color: transparent; 
+  	background-image: linear-gradient(45deg, #FFC8AC, #FF6648); 
+  	-webkit-background-clip: text; 
+  	background-clip: text;
+	font-family: 'Pacifico', cursive;
+	font-size: 22pt;
+	line-height: 60px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 70px;
+	font-size: 16pt;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #F6DDCC;
+	transition: 0.5s;
+}
+.checkbtn{
+	font-size: 30pt;
+	color: white;
+	float: right;
+	line-height: 70px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+body{
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 195, 195, 0.5)), url("1.jpg") repeat;
+	background-size: 100%;
+	height: 100%;
+}
+main{
+	padding-bottom: 50px;
+}
+#space{
+	height: 110px;
+}
+#aboutus{
+	height: 10px;
+}
+#p1{
+	width: 45%;
+	background: rgba(82, 71, 71, 0.85);
+	color: rgb(248, 247, 247);
+	padding: 20px;
+	border-radius: 5px;
+	float: center;
+	margin: 50px;
+	margin-left: 50%;
+	margin-left: 50%;
+	text-align: justify;
+}
+#pic1{
+	width: 100%;
+	float: center;
+	margin: 50%;
+}
+#pic3{
+	width: 33%;
+	float: right;
+	margin: 50px;
+	margin-left: 50%;
+	margin-left: 50%;
+}
+.p2{
+	width: 100%;
+	color: rgb(248, 247, 247);
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+#pic2{
+	width: 33%;
+	float: left;
+	margin-top: 40px;
+	margin-left:10%;
+	margin-right: 0;
+	margin-bottom: 10px;
+	
+}
+#p3{
+	width: 45%;
+	background: rgba(82, 71, 71, 0.85);
+	color: rgb(248, 247, 247);
+	padding: 20px;
+	border-radius: 5px;
+	float: left;
+	margin: 40px;
+	margin-left: 10%;
+	margin-right: 10px;
+	
+}
+#pic3{
+	width: 33%;
+	background: rgba(82, 71, 71, 0.85);
+	border-radius: 5px;
+	float: right;
+	margin: 40px;
+	margin-right:10%;
+	margin-left: 0;
+	
+}
+#googlemap{
+	width: 60%;
+	height: 400px;
+	display: block;
+	float: center;
+}
+footer{
+	background:rgba(115, 153, 165 ,0.8);
+	color: rgb(248, 247, 247);
+	text-align: center;
+	 margin-top: 50px;
+	 padding: 20px;
+}
+@media screen and (max-width: 858px) {
+	.checkbtn{
+	display: block;
+	}
+	ul{
+		position: fixed;
+		width: 40%;
+		height: 100vh;
+		background: rgb(242, 235, 233 ,0.8);
+		top: 60px;
+		right: -100%;
+		text-align: right;
+		transition: 0.5s;
+
+	}
+	nav ul{
+		margin-right: 0;
+	}
+	nav ul li{
+		display: block;
+		padding-right: 15px;
+	}
+	nav ul li a{
+		color: #8c7462;
+		font-weight: bold;
+	
+	}
+	nav ul li a:hover{
+		background: none;
+		color: #F39C84;
+	}
+	#check:checked ~ ul{
+		right: 0;
+	}
+	#p1{
+		width: 80%;
+		margin: 30px auto;
+		float: none;
+	}
+	#p2{
+		width: 80%;
+		margin: 30px auto;
+		float: none;
+	}
+	#p3{
+		width: 80%;
+		margin: 30px auto;
+		float: none;
+	}
+	#pic1{
+		width: 50%;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	#pic2{
+		width: 50%;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	#pic3{
+		width: 50%;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	#googlemap{
+		margin-top: 20px;
+	}
+}
