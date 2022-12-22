@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Courgette&family=Kalam&family=Noto+Sans+TC&family=Pacifico&display=swap');
+*{
+	font-family: 'Baloo 2', 'Noto Sans TC';
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	background: linear-gradient(rgba(63, 50, 50, 0.8), rgba(63, 50, 50, 0.8)), url("1.jpg") repeat;
+	background-size: 100%;
+	height: 100%;
+}
+nav{
+	position: fixed;
+	background: #5D4037;
+	height: 60px;
+	width: 100% ;
+	margin-top: 0;
+}
+#logo a{
+	 color: transparent; 
+  	background-image: linear-gradient(45deg, #FFC8AC, #FF6648); 
+  	-webkit-background-clip: text; 
+  	background-clip: text;
+	font-family: 'Pacifico', cursive;
+	font-size: 22pt;
+	line-height: 60px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 70px;
+	font-size: 16pt;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #F6DDCC;
+	transition: 0.5s;
+}
+.checkbtn{
+	font-size: 30pt;
+	color: white;
+	float: right;
+	line-height: 70px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+#blank{
+	height: 80px;
+}
+#title{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #f2ebe9 ;
+}
+
+
+aside{
+	width: 35%;
+	background: rgba(154, 221, 245, 0.5);
+	color: rgb(248, 247, 247);
+	padding: 20px;
+	border-radius: 5px;
+	float: left;
+	margin: 20px;
+	margin-top: 0;
+	margin-left: 10%;
+}
+aside ul li {
+	color: #FFB9B9;
+}
+img{
+	width: 35%;
+	float: left;
+	margin: 20px;
+	margin-top: 10px;
+	margin-left:10%;
+	
+}
+main{
+	max-width: 500px;
+	width: 40%;
+	background: rgba(248, 247, 247, 1.0);
+	margin:0 auto;
+	padding: 30px;
+	height: 550px;
+	border-radius: 6px;
+	float: right;
+	margin-right: 10%;
+}
+main .title{
+	font-size: 24px;
+	font-weight: bold;
+	color:#F36C4F ;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+}
+main .form{
+	width: 100%;
+}
+main .form .input_field{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+main .form .input_field label{
+	width: 90%;
+	color: #534C73;
+	font-size: 16px;
+}
+main .form .input_field .input,
+main .form .input_field .textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
+main .form .input_field .textarea{
+	resize: none;
+	height: 125px;
+}
+main .form .input_field .btn{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 0;
+	background: #FF9779 ;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+main .form .input_field .btn:hover{
+	background:#FF7043;
+}
+
+footer{
+	background:rgba(115, 153, 165 ,0.8);
+	color: rgb(248, 247, 247);
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+	clear: both;
+
+
+}
+@media screen and (max-width: 858px) {
+	.checkbtn{
+	display: block;
+}
+	nav ul{
+		margin-right: 0;
+		position: fixed;
+		width: 40%;
+		height: 100vh;
+		background: rgb(242, 235, 233 ,0.8);
+		top: 60px;
+		right: -100%;
+		text-align: right;
+		transition: 0.5s;
+	}
+	nav ul li{
+		display: block;
+		padding-right: 15px;
+	}
+	nav ul li a{
+		color: #8c7462;
+		font-weight: bold;
+	}
+	nav ul li a:hover{
+		background: none;
+		color: #F39C84;
+	}
+	#check:checked ~ ul{
+		right: 0;
+	}
+	aside{
+		float: none;
+		width: 60%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	img{
+		float: none;
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+	main{
+		float: none;
+		width: 70%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+}
